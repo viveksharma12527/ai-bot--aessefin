@@ -2,11 +2,67 @@
 <img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
 </div>
 
-# Run and deploy your AI Studio app
+# Italian AI Chatbot - Payroll Loan Assistant
 
-This contains everything you need to run your app locally.
+An intelligent Italian-language chatbot designed to assist customers with payroll loan applications. The chatbot gathers essential information and guides users through the document submission process for loan assessment.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1J_zzcsmJWJWfTOlMQEqNKfAv2Z_NkGhx
+## Project Overview
+
+This chatbot is built for the banking sector, specifically for handling payroll loan inquiries. It features:
+
+- **Natural Italian Conversation**: Human-like, professional interactions in Italian
+- **Multi-Industry Support**: Customizable for Banking, Fashion, and Hospitality sectors
+- **Smart Document Collection**: Guides users through required documentation based on their profile
+- **Intelligent Validation**: Handles different customer profiles (employees, pensioners, etc.)
+
+## Chatbot Behavior
+
+### Objective
+Gather essential customer information and request necessary documents for payroll loan assessment.
+
+### Conversation Style
+- Uses random Italian names (Stefano, Giuseppe, Erika, Sara) chosen at session start
+- Mirrors the customer's formality level (formal "Lei" or informal "Tu")
+- Short, clear messages with only relevant content
+- One request per message, no automatic follow-ups
+
+### Initial Greeting
+*"Good morning and welcome to the chat. I'm [NAME] from the Cofidis Bank branch. Let's proceed with the assessment. Can you tell me your first and last name?"*
+
+### Information Collection Flow
+1. **Work Situation**: "Can you tell me about your work situation?"
+2. **Loan Amount**: "And how much would you need?"
+3. **Purpose**: "Do you have a particular project or need to fulfill?"
+
+### Loan Amount Rules
+- **< €3,000**: "We currently provide financing from €3,000 and up."
+- **≥ €3,000**: Proceed with document requests
+
+### Document Requirements
+
+**For Employees:**
+- ≤ €10,000: Latest pay stub required
+- \> €10,000: Latest paycheck required
+
+**For Pensioners:**
+- ≤ €10,000: CUD or Obis-M form required
+- \> €10,000: CUD or Obis-M form required
+
+**Non-Fundable Profiles:**
+- VAT number/sole proprietorship
+- Undeclared work
+- Unemployed
+- Pension < €700
+- Age > 81
+
+For non-fundable profiles, the chatbot asks about guarantor availability.
+
+### Key Features
+- No financial calculations provided (installments, interest, APR)
+- Document submission via chat (photos accepted)
+- Alternative email: info@aessefin.it
+- No in-person office visits
+- Professional callback option available
 
 ## Run Locally
 
